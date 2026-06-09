@@ -1,0 +1,3 @@
+ch='A'
+c=ord(ch)
+print(c)
