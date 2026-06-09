@@ -1,0 +1,3 @@
+dictionary={"Name":"Haritha","Age":22,"salary":10000,"dept":"IT"}
+for i in dict:
+print(i{key],":",i[value])
