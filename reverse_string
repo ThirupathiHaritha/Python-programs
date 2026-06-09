@@ -1,0 +1,5 @@
+Str="Haritha"
+rev=""
+for s in str:
+  rev=s+rev
+print(rev)
