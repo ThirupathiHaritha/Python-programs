@@ -1,0 +1,6 @@
+str="Haritha"
+non_duplicate=""
+for s in str:
+  if s not in non_duplicate:
+    non_duplicate+=s
+print(s)
