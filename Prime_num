@@ -1,0 +1,13 @@
+sum=0
+n=2
+while sum<5:
+    isprime=True
+    for i in range(2,n):
+        if n%i==0:
+            isprime=False
+            break
+    if isprime:
+            print(n)
+            sum+=1
+    n+=1
+
