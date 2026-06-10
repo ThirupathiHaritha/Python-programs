@@ -1,0 +1,11 @@
+n=121
+sum=0
+original=n
+while n:
+    digit=n%10
+    sum=sum*10+digit
+    n=n//10
+if sum==original:
+    print("palindrome")
+else:
+    print("Not a palindrome")
