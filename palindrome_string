@@ -1,0 +1,10 @@
+str="madam"
+rev=""
+for i in str:
+    rev=i+rev
+if rev==str:
+    print("palindrome string")
+else:
+    print("not a palindrome")
+
+
