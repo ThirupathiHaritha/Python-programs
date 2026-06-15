@@ -1,10 +1,25 @@
-str="madam"
-rev=""
-for i in str:
-    rev=i+rev
-if rev==str:
-    print("palindrome string")
-else:
-    print("not a palindrome")
+#str="madam"
+#rev=""
+#or i in str:
+ #   rev=i+rev
+#if rev==str:
+ #   print("palindrome string")
+#else:
+ #   print("not a palindrome")
+
+
+def ispalindrome(s):
+    left=0
+    right=len(s)-1
+    while left<right:
+        if s[left]!=s[right]:
+            return False
+        left+=1
+        right-=1
+    return True
+    
+print(ispalindrome("madam"))
+
+
 
 
