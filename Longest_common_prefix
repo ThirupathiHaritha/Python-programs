@@ -1,0 +1,11 @@
+
+def longest_common_prefix(words):
+    result = ""
+    for i in range(len(words[0])):
+        char = words[0][i]
+        for j in words:
+            if i >= len(j) or j[i] != char:
+                return result
+        result += char
+    return result
+print(longest_common_prefix(["flower", "flow", "flight"]))
