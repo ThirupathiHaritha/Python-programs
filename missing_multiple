@@ -1,0 +1,9 @@
+def missing(list,k):
+    result=k
+    while result in list:
+        result+=k
+    return result
+        
+list=[8,2,3,4,6]
+k=2
+print(missing(list,k))
