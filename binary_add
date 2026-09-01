@@ -1,0 +1,9 @@
+def add_binary(a, b):
+    num1 = int(a, 2)
+    num2 = int(b, 2)
+    total = num1 + num2
+    return bin(total)[2:]
+a = "11"
+b = "1"
+print(add_binary(a, b))
+
