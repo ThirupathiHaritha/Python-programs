@@ -1,0 +1,9 @@
+def remove(list):
+    j=1
+    for i in range(1,len(list)):
+        if list[i] != list[i-1]:
+            list[j]=list[i]
+            j+=1
+    return list[:j]
+list=[1,2,2,3,3,4,5]
+print(remove(list))
