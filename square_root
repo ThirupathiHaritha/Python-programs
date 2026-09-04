@@ -1,0 +1,7 @@
+def square_root(n):
+    i=0
+    while i*i<=n:
+        i+=1
+    return i-1
+n=8
+print(square_root(n))
