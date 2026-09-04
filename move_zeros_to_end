@@ -1,0 +1,10 @@
+def move(list):
+    list2=[]
+    for i in range(len(list)):
+        if list[i] != 0:
+            list2.append(list[i])
+    while len(list) > len(list2):
+        list2.append(0)
+    return list2
+list=[0,1,0,2,3,0,5]
+print(move(list))
