@@ -1,0 +1,12 @@
+def add(list1,list2):
+    num1=0
+    num2=0
+    for i in range(len(list1)):
+        num1=num1*10+list1[len(list1)-1-i]
+    for i in range(len(list2)):
+        num2=num2*10+list2[len(list2)-1-i]
+    ans=num1+num2
+    return ans
+list1=[2,4,3]
+list2=[5,6,4]
+print(add(list1,list2))
