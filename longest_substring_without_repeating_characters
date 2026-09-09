@@ -1,0 +1,10 @@
+s="abcabcbb"
+last={}
+left=0
+max_length=0
+for right, value in enumerate(s):
+    if value in last and last[value]>=left:
+        left=last[value]+1
+    last[value]=right
+    max_length=max(max_length,right-left+1)
+print(max_length)
