@@ -1,0 +1,12 @@
+l1=[1,2]
+l2=[3,4]
+l3=l1+l2
+l3.sort()
+n=len(l3)
+if n%2==1:
+    median=l3[n//2]
+else:
+    median1=l3[n//2-1]
+    median2=l3[n//2]
+    median=(median1+median2)/2
+print(median)
