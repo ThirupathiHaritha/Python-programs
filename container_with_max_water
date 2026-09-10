@@ -1,0 +1,14 @@
+values= [1,8,6,2,5,4,8,3,7]
+left=0
+right=len(values)-1
+max_length=0
+while left<right:
+    width=right-left
+    height=min(values[left],values[right])
+    water=width*height
+    max_length=max(water,max_length)
+    if values[left]<values[right]:
+        left+=1
+    else:
+        right-=1
+print(max_length)
