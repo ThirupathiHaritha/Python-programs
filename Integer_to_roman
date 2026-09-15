@@ -1,0 +1,16 @@
+n=58
+values = [
+            (1000, "M"),
+            (500, "D"),
+            (100, "C"),
+            (50, "L"),
+            (10, "X"),
+            (5, "V"),
+            (1, "I")
+        ]
+result=" "
+for value,symbol in values:
+    while n>=value:
+        result+=symbol
+        n-=value
+print(result)
