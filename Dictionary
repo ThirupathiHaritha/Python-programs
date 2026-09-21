@@ -1,0 +1,10 @@
+student = {
+    "name":"haritha",
+    "education" :"B. Tech",
+    "location" : "Nellore"
+}
+print(student["name"])
+student["age"]=22
+print(student)
+student.pop("education")
+print(student)
