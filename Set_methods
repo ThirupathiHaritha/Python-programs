@@ -1,0 +1,8 @@
+set=set()
+set.add(1)
+set.add(1)
+set.update([1,4,6,7,])
+
+print(set)
+set.remove(4)
+print(set)
