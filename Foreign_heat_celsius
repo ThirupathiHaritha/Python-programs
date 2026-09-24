@@ -1,0 +1,8 @@
+
+temps = [0, 20, 37, 100] 
+d={}
+for i in temps:
+    result=0
+    result=(i*9/5)+32
+    d[i]=result
+print(d)
