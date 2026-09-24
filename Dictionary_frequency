@@ -1,0 +1,15 @@
+dictionary={}
+for i in range(1,6):
+    dictionary[i]=i*i
+print(dictionary)
+
+
+
+
+
+names = ["Tom", "Jennifer", "Ali", "Chris"]
+dictionary={}
+
+for name in names:
+    dictionary[name]=len(name)
+print(dictionary)
