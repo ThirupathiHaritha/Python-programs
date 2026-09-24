@@ -1,0 +1,27 @@
+str="apple banana apple orange banana apple"
+words=str.split() 
+dict={}
+for i in words:
+    if i in dict:
+        dict[i]+=1
+    else:
+        dict[i]=1
+print(dict)
+
+
+
+
+str="apple banana apple orange banana apple"
+
+dict={}
+word=" "
+for i in str+" ":
+    if i != " ":
+        word+=i
+    else:
+        if word in dict:
+            dict[word]+=1
+        else:
+            dict[word]=1
+        word=" "
+print(dict)
