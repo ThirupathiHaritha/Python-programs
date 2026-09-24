@@ -1,0 +1,32 @@
+
+text="Code"
+dictionary={}
+for i in text:
+    dictionary[i]=ord(i)
+print(dictionary)
+
+
+
+
+
+text="Code"
+d={}
+
+for i in text:
+    value=0
+    if 'a'<=i<='z':
+        for j in "abcdefghijklmnopqrstuvwxyz":
+            if i == j:
+                break
+            value+=1
+        d[i]=97+value
+    elif 'A'<=i<='Z':
+        for j in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+            if i == j:
+                break
+            value+=1
+        d[i]=67+value
+print(d)
+
+
+
