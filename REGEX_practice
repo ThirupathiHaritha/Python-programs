@@ -1,0 +1,10 @@
+import re
+text = "I bought 3 apples, 4.5 kg of mangoes, and 3 more oranges. Total: 7.5 kg."
+data=re.findall("\d(?:\.\d)?",text)
+result={}
+for i in data:
+    if i in result:
+        result[i]+1
+    else:
+        result[i]=1
+print(result)
