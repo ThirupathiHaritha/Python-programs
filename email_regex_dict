@@ -1,0 +1,8 @@
+import re
+text = "Contact us at support@example.com or sales@company.org for more info."
+emails=re.findall(r"\w+@\w+\.\w+", text)
+result={}
+for email in emails:
+    domain=email.split("@")[1]
+    result[email]=domain
+print(result)
