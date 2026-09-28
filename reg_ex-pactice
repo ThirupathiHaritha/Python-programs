@@ -1,0 +1,14 @@
+import re
+text = "Hey :) How are you :( I missed you <3"
+emogies=re.findall(r":\)|:\(|<3",text)
+meaning={
+    ":)":"smile",
+    ":(":"sad",
+    "<3":"love"
+}
+result={}
+for emoji in emogies:
+    result[emoji]=meaning[emoji]
+modified_text=re.sub(":\)|:\(|<3",lambda x:meaning[x.group()],text)
+print(result)
+print("m0dified text=",modified_text)
