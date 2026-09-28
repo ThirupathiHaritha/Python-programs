@@ -1,0 +1,7 @@
+import re
+text = "Meetings are on 2025-10-06, 10/07/2025, and 08-Nov-2025." 
+date=re.findall(r"\d+-\d+-\d+|\d+/\d+/\d+|\d+-\w+-\d+",text)
+result={}
+for i in range(len(date)):
+    result[i]=date[i]
+print(result)
