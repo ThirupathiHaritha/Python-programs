@@ -1,0 +1,19 @@
+import re
+from pprint import pprint
+data = """ 
+Name: John, Age=25; City->London 
+Name=Alice; Age:30 City:NewYork 
+City:Paris Name=Mike Age=22 
+""" 
+result=[]
+for line in data.strip().split("\n"):
+    name=re.search(r"Name\s*[:=]\s*([A-Za-z]+)",line)
+    age=re.search(r"Age\s*[:=]\s*(\d+)",line)
+    #ity=re.search(r"City\s*[?::|->|=]\s*([A-Za-z}+)",line)
+    city = re.search(r"City\s*(?::|->|=)\s*([A-Za-z]+)", line)
+    result.append(
+        { 'name':name.group(1),
+         'age':age.group(1),
+         'city':city.group(1) }
+    )
+pprint(result)
