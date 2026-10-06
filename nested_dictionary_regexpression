@@ -1,0 +1,23 @@
+import re
+from pprint import pprint
+log = """ 
+User: alice IP: 192.168.1.10   
+User: bob IP: 10.0.0.2   
+User: alice IP: 192.168.1.11   
+User: bob IP: 10.0.0.2 
+""" 
+result={}
+for line in log.strip().split("\n"):
+    user=re.search(r'User:\s+(\w+)',line)
+    ip=re.search(r'IP:\s+(\d+\.\d+\.\d+\.\d+)',line)
+    name=user.group(1)
+    address=ip.group(1)
+    if name in result:
+        if address not in result[name]:
+            result[name].append(address)
+    else:
+        result[name]=[address]
+
+print(result)  
+
+ 
