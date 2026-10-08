@@ -1,0 +1,13 @@
+import re
+data="Alice: 89, Bob: 76, Charlie: 92, Alice: 95, Bob: 82"
+match=re.findall(r'(\w+):\s+(\d+)',data)
+result={}
+for name,mark in match:
+    mark=int(mark)
+    if name not in result:
+        result[name]=[mark]
+    else:
+        result[name].append(mark)
+for name in result:
+    result[name] = sum(result[name]) / len(result[name])
+print(result)
