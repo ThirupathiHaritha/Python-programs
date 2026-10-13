@@ -1,0 +1,13 @@
+arr=[1,3,5,7,8]
+maximum=arr[0]
+minimum=arr[0]
+sum=0
+for i in arr:
+    if i<minimum:
+        minimum=i
+    if i>maximum:
+        maximum=i
+    sum+=i
+max=sum-maximum
+min=sum-minimum
+print(max,min)
