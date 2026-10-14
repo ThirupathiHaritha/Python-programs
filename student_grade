@@ -1,0 +1,12 @@
+list=[73,67,38,33]
+result=[]
+for i in list:
+    if i<38:
+        result.append(i)
+    else:
+        next=((i//5)+1)*5
+        if next-i<3:
+            i=next
+        result.append(i)
+print(result)
+
