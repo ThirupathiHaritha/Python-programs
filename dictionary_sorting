@@ -1,0 +1,9 @@
+fruits={"apple":4,"banana":6,"grapes":3,"papaya":2,"mangos":7}
+items=list(fruits.items())
+for i in range(len(items)):
+    for j in range(i,len(items)):
+        if items[i][1]>items[j][1]:
+            items[i],items[j]=items[j],items[i]
+fruit=dict(items)
+print(fruit)
+
